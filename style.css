@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 30px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+}
+
+.logo span {
+    color: green;
+}
+
+.location {
+    min-width: 190px;
+}
+
+.location h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.location p {
+    font-size: 13px;
+    color: gray;
+}
+
+.search {
+    height: 48px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.login {
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .location {
+        flex: 1;
+        min-width: 130px;
+    }
+
+    .search {
+        order: 5;
+        flex-basis: 100%;
+    }
+
+    .cart {
+        padding: 11px;
+    }
+}
+
+.banner {
+    width: 90%;
+    height: 220px;
+    margin: 25px auto;
+    background-color: lightgreen;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.banner-text {
+    width: 55%;
+    padding: 30px;
+}
+
+.banner-text h1 {
+    font-size: 30px;
+    color: darkgreen;
+    margin-bottom: 12px;
+}
+
+.banner-text p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.banner-text button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.banner-image {
+    width: 45%;
+    height: 100%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 180px;
+    }
+
+    .banner-text {
+        width: 60%;
+        padding: 15px;
+    }
+
+    .banner-text h1 {
+        font-size: 20px;
+    }
+
+    .banner-text p {
+        font-size: 12px;
+    }
+
+    .banner-image {
+        width: 40%;
+    }
+}
